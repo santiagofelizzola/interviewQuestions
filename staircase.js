@@ -24,4 +24,26 @@ const staircase = (n) => {
 }
 
 
-staircase(5)
+// staircase(5)
+
+const staircase_V2 = (n) => {
+  for (let i = 1; i <= n; i++) {
+    let spaces = "";
+    let hashes = "";
+
+    // Add spaces
+    for (let j = 1; j <= n - i; j++) {
+      spaces += " ";
+    }
+
+    // Add hashes
+    for (let k = 1; k <= i; k++) {
+      hashes += "#";
+    }
+
+    console.log(spaces + hashes);
+  }
+}
+
+
+staircase_V2(5)
