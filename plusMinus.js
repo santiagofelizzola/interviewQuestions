@@ -10,7 +10,6 @@ const plusMinus = (arr) => {
   let posNum = 0;
   let negNum = 0;
   let zeroNum = 0;
-  let arr2 = [];
   // console.log(arr)
   for (let i = 0; i < arr.length; i++) {
     // console.log(arr[i])
@@ -29,7 +28,7 @@ const plusMinus = (arr) => {
   console.log(negNum.toFixed(6));
   console.log(posNum.toFixed(6));
   console.log(zeroNum.toFixed(6));
-  return arr2;
+  return;
 }
 
 plusMinus(testArr)
