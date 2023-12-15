@@ -6,7 +6,7 @@
 
 const testTime = "07:05:45PM"
 
-function timeConversion(s) {
+const timeConversion = (s) => {
   console.log(typeof s);
   let letters = s.slice(s.length - 2);
   let nums = s.slice(0, s.length - 2);
